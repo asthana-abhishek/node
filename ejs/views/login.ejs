@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Login </title>
+</head>
+<body>
+    <%- include('../common/header') %>
+    <h1>welcome <%=data.name%></h1>
+    <h2>Your age = <%=data.age%></h2>
+    <ul>
+        <% data.skills.forEach((item)=>{ %>
+            <li><%= item %></li>
+        <% }) %>
+        
+    </ul>
+    <input type="text" name="username" id="username" placeholder="Username">
+    <input type="text" name="password" id="password" placeholder="Password">
+    <input type="submit" value="Login">  
+</body>
+</html>
